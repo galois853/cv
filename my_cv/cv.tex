@@ -1,0 +1,37 @@
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\colorlet{awesome}{awesome-red}
+\usepackage{adjustbox}
+\usepackage{xcolor}
+\usepackage{xeCJK}
+\usepackage{xstring}
+\setCJKmainfont[Path=/System/Library/Fonts/Supplemental/]{Songti.ttc}
+\setbool{acvSectionColorHighlight}{false}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+\name{简历}{}
+%\mobile{me}
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+\input{cv/basic.tex}
+\makecvfooter
+{\today}
+{张辉耀~~~·~~~简历}
+{\thepage}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{cv/education.tex}
+\input{cv/publications.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
